@@ -1,4 +1,20 @@
-# About qrat
+<div align="center">
+    <h1>qrat</h1>
+    <img src="https://img.shields.io/github/license/anarix0/qrat">
+    <br>
+    <img src="https://img.shields.io/github/languages/top/anarix0/qrat?color=%23000000">
+    <img src="https://img.shields.io/github/stars/anarix0/qrat?color=%23000000&logoColor=%23000000">
+    <br>
+    <img src="https://img.shields.io/github/commit-activity/w/anarix0/qrat?color=%23000000"> 
+    <img src="https://img.shields.io/github/last-commit/anarix0/qrat?color=%23000000&logoColor=%23000000">
+    <br>
+    <img src="https://img.shields.io/github/issues/anarix0/qrat?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues-closed/anarix0/qrat?color=%23000000&logoColor=%23000000">
+    <br>
+</div>
+<hr style="border-radius: 20%; margin-top: 30px; margin-bottom: 60px;" noshade="" size="35" width="100%">
+
+# About
 qrat is a open-source upcoming remote access trojan.
 
 **Disclaimer: qrat is for education/research purposes only. I take NO responsibility and/or liability for how you choose to use any of the tools/source code/any files provided.
