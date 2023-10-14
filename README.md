@@ -15,7 +15,7 @@
 <hr style="border-radius: 20%; margin-top: 30px; margin-bottom: 60px;" noshade="" size="35" width="100%">
 
 # About
-qrat is a open-source upcoming remote access trojan.
+qrat is a open-source remote access trojan.
 
 **Disclaimer: qrat is for education/research purposes only. I take NO responsibility and/or liability for how you choose to use any of the tools/source code/any files provided.
  I will not be liable for any losses and/or damages in connection with use of ANY files provided with qrat.
@@ -27,7 +27,7 @@ qrat is a open-source upcoming remote access trojan.
 - Discord bot token
   
 ### Victim Requirements
-- Python 3.11.5 or newer (i'm working on a non-python version)
+- Python 3.11.5 or newer
 - Windows Device
 - Internet access
 
