@@ -39,3 +39,5 @@ qrat is a open-source remote access trojan.
 - logs
 - download and run
 - and more to come.
+
+## [Setup](/wiki)
