@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>qrat</h1>
+    <h1>qrat 1.2</h1>
     <img src="https://img.shields.io/github/license/anarix0/qrat">
     <br>
     <img src="https://img.shields.io/github/languages/top/anarix0/qrat?color=%23000000">
@@ -32,8 +32,10 @@ qrat is a open-source upcoming remote access trojan.
 - Internet access
 
 ## Features
-- Tasklist
-- Startup
-- Command prompt send (including taskkill)
-- Screenshotting
+- adding to startup
+- command prompt (with file output)
+- screenshots
+- updater
+- logs
+- download and run
 - and more to come.
