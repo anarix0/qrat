@@ -40,4 +40,4 @@ qrat is a open-source remote access trojan.
 - download and run
 - and more to come.
 
-## [Setup](/wiki)
+## [Setup](https://github.com/anarix0/qrat/wiki)
