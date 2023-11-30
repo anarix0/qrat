@@ -14,7 +14,7 @@
 </div>
 <hr style="border-radius: 20%; margin-top: 30px; margin-bottom: 60px;" noshade="" size="35" width="100%">
 
-## qrat is being rebranded, see [this post](https://github.com/anarix0/qrat/discussions/2).
+## qrat is being recoded, see [this post](https://github.com/anarix0/qrat/discussions/2).
 
 # About
 qrat is a open-source remote access trojan.
